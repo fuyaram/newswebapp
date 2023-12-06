@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+  
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <img src="./assets/icons8-google-news-94.png" alt="Logo">
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <img src="./assets/icons8-google-news-94.png" alt="Logo">
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+    
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">tech</a></li>
+                        <li><a href="#">trending</a></li>
+                        <li><a href="#">viral</a></li>
+                        <li><a href="#">FAANG</a></li>
+                        <li><a href="#">Ai&ML</a></li>
+                    </ul>
+                </div>
+    
+                <div class="darkLight-searchBox">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
+    
+                    <div class="searchBox">
+                       <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                       </div>
+    
+                        <div class="search-field">
+                            <input type="text" placeholder="Search...">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+    
+
+
+
+          
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+
+    <footer class="footer-sec">
+        <div class="main">
+          
+          
+          <div class="logo row">
+            <div class="footer-header">
+              <img src="./assets/FallGuys_500px-removebg-preview.png" class="manik" alt="">
+            </div>
+            <div class="logo-des">
+              <p>"Dynamic news publisher delivering timely, accurate, and diverse content across platforms. Innovating journalism with cutting-edge reporting to inform and engage audiences globally."</p>
+              
+              <a href="#" class="btn-know">more about</a>
+            </div>
+            
+            
+          </div>
+          
+          
+          
+          <div class="office row">
+            <div class="footer-header">
+              <h3>hot topics</h3>
+            </div>
+            <div class="office-des">
+                <a id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">Ai & ML</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">data science</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">technalogy</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">software</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">tools</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">revolution</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">tech hub</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">startup</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">FAANG</a>
+                <a  id="iop" href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">MNCs</a>
+            </div>
+          </div>
+          
+          
+          <div class="link row">
+            <div class="footer-header">
+              <h3>news feed</h3>
+            </div>
+            
+            <div class="link-des">
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">Home</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">About</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">news</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">Contact</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">topics</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">e-paper</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">top news</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">viral</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">top 100</a>
+              <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/" class="footer-links">tech</a>
+            </div>
+            
+          </div>
+          
+          
+          <div class="newsletter row">
+            <div class="footer-header">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="newsletter-des">
+              <div class="subcribe"><i class="sub-icon ri-mail-check-fill"></i>
+                <input id="lrloda" type="mail" placeholder = "Enter Email ID" required>
+                <i class="sub-icon ri-arrow-right-line"></i>
+              </div>
+              <div class="icons">
+                <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/"><i class="social-icon ri-facebook-fill"></i></a>
+                <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/"><i class="social-icon ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/"><i class="social-icon ri-linkedin-fill"></i></a>
+                <a href="https://www.linkedin.com/in/fuyaram-dewasi-954367234/"><i class="social-icon ri-github-line"></i></a>
+                
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="copyright">
+        <hr>
+        
+        <p>© Copyright 2023 <strong>fuya</strong>.</p>
+        </div>
+      </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html> 
